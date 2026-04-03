@@ -18,9 +18,17 @@
         }
         body { 
             background-color: #f4f7f6; 
-            color: #333; 
+            color: #333;
+            height: 100%;
+            margin: 0;
         }
-        /* Custom Scrollbar */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+    .main-wrapper {
+        flex: 1;
+    }/* Custom Scrollbar */
 ::-webkit-scrollbar { 
     width: 10px; 
 }
@@ -281,6 +289,7 @@
     </style>
 </head>
 <body>
+    <div class="main-wrapper">
     <div id="loader"></div>
     <nav class="navbar">
         <div class="logo">MUDHIHIRJZ <span>TECH</span></div>
@@ -355,6 +364,7 @@
         item.classList.toggle('active');
     }
 </script>
+    </div>
     <footer>
         <div class="footer-content">
             <div class="footer-section">
