@@ -17,9 +17,17 @@
             font-family: 'Poppins', sans-serif; 
         }
         body { 
-            background-color: #f9f9f9; 
+            background-color: #f9f9f9;
+            height: 100%;
+            margin: 0;
         }
-        /* Custom Scrollbar */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+   .main-wrapper{
+       flex: 1;
+   }/* Custom Scrollbar */
         ::-webkit-scrollbar { 
             width: 10px; 
         }
@@ -278,6 +286,7 @@
     </style>
 </head>
 <body>
+    <div class="main-wrapper">
     <div id="loader"></div>
     <nav class="navbar">
         <div class="logo">MUDHIHIRJZ <span>TECH</span></div>
@@ -358,6 +367,7 @@
                </div>
             </div>
         </div>
+    </div>
     </div>
 
     <footer>
